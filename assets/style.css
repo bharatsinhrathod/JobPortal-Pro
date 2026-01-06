@@ -1,0 +1,152 @@
+/* assets/style.css */
+
+/* --- 1. GLOBAL STYLES --- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* --- 2. NAVBAR STYLES (The Fix) --- */
+.navbar {
+    background-color: rgba(33, 37, 41, 0.95) !important; /* Dark Glass */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* MENU LINKS (Find Jobs, Login) */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important; /* Default Text Color */
+    font-weight: 500;
+    margin: 0 12px;
+    padding-bottom: 5px; /* Space for the line */
+    position: relative; /* Essential for the line to stick */
+    transition: all 0.3s ease;
+}
+
+/* HOVER STATE: Text turns white and glows */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* THE SLIDING BLUE LINE ANIMATION */
+/* We exclude elements with class .btn so Register button stays clean */
+.navbar-nav .nav-link:not(.btn)::after {
+    content: '';
+    position: absolute;
+    width: 0%;           /* Start invisible */
+    height: 3px;         /* Thickness */
+    bottom: 0;           /* Position at very bottom of text */
+    left: 0;
+    background-color: #0d6efd; /* Bright Blue */
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth slide */
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.8); /* Blue Glow */
+}
+
+/* Trigger animation on hover */
+.navbar-nav .nav-link:not(.btn):hover::after {
+    width: 100%;
+}
+
+/* BUTTON STYLES (Register / Post Job) */
+/* These override the nav-link styles above */
+.navbar-nav .btn-nav {
+    padding: 8px 25px !important;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white !important;
+    margin-left: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.navbar-nav .btn-nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(13, 110, 253, 0.4);
+}
+
+/* --- 3. HERO SECTION (Light Theme) --- */
+.hero-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f2f5 100%);
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #eef0f2;
+}
+
+/* --- 4. SEARCH BAR --- */
+.search-card {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid #f1f1f1;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    padding: 15px 25px;
+    font-size: 1.05rem;
+    outline: none;
+    color: #495057;
+}
+
+.search-divider {
+    width: 1px;
+    height: 30px;
+    background-color: #e0e0e0;
+}
+
+/* --- 5. CATEGORY TAGS --- */
+.category-tag {
+    background: #eaeff5;
+    color: #555;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.category-tag:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- 6. CARDS & FOOTER --- */
+.card {
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+}
