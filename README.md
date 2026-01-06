@@ -139,12 +139,5 @@ job_portal/
 - Give a ⭐️ if this project helped you!
 ---
 
-### Pro Tip for GitHub:
-To make the screenshots appear in the table:
-1.  Go to your GitHub repository.
-2.  Click **Issues** -> **New Issue**.
-3.  Drag and drop your screenshot images into the text box.
-4.  GitHub will generate a link like `![image](https://user-images.githubusercontent.com/...)`.
-5.  **Copy that link** and paste it into the `README.md` code where I put the `via.placeholder.com` links.
-6.  Close the issue (you don't need to save it, just need the link).
+
 
