@@ -65,3 +65,85 @@ Follow these steps to set up the project locally:
 Download the project to your local server directory (e.g., `htdocs`).
 ```bash
 git clone [https://github.com/YOUR-USERNAME/JobPortal-Pro.git](https://github.com/YOUR-USERNAME/JobPortal-Pro.git)
+```
+### 2. Database Setup
+- Open phpMyAdmin (http://localhost/phpmyadmin).
+- Create a new database named job_portal.
+- Import the db.sql file located in the root folder of this project.
+
+### 3. Configure Connection
+- If your MySQL port is not 3306, update includes/db.php:
+```bash
+$host = 'localhost:3307'; // Update port if necessary
+```
+### 4. Create Upload Folders
+- Ensure the following folders exist and have write permissions:
+- uploads/
+- uploads/resumes/
+
+### 5. Run the Project
+Open your browser and visit: 
+```bash
+http://localhost/job_portal
+```
+## 📂 Project Structure
+
+```text
+job_portal/
+│
+├── assets/
+│   └── style.css            # Main stylesheet
+│
+├── includes/
+│   ├── db.php               # Database connection settings
+│   ├── header.php           # Navbar and top HTML
+│   ├── footer.php           # Copyright and bottom scripts
+│   └── mailer.php           # Email simulation logic
+│
+├── uploads/
+│   ├── resumes/             # Folder for applicant CVs
+│   └── default.png          # Default user profile picture
+│
+├── admin_dashboard.php      # Stats & Activity Feed (Admin only)
+├── manage_users.php         # User deletion tool (Admin only)
+├── manage_jobs.php          # Job moderation tool (Admin only)
+│
+├── dashboard.php            # Recruiter Main Panel
+├── post_job.php             # Job Creation Page
+│
+├── seeker_dashboard.php     # Applicant Main Panel
+├── jobs.php                 # Search & Filter Page
+├── apply.php                # Job Details & Apply Form
+├── profile.php              # Edit Profile (All users)
+│
+├── index.php                # Landing Page (Home)
+├── login.php                # User Login
+├── register.php             # User Registration
+├── logout.php               # Session Destroy
+├── about.php                # About Us Page
+├── contact.php              # Contact Admin Page
+│
+├── db.sql                   # Database Import File
+├── email_logs.txt           # File where "Sent Emails" are saved
+└── README.md                # Documentation
+```
+
+### 🤝 Contributing
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Commit your changes.
+- Push to the branch.
+- Open a Pull Request.
+
+### ❤️ Show your support
+- Give a ⭐️ if this project helped you!
+---
+
+### Pro Tip for GitHub:
+To make the screenshots appear in the table:
+1.  Go to your GitHub repository.
+2.  Click **Issues** -> **New Issue**.
+3.  Drag and drop your screenshot images into the text box.
+4.  GitHub will generate a link like `![image](https://user-images.githubusercontent.com/...)`.
+5.  **Copy that link** and paste it into the `README.md` code where I put the `via.placeholder.com` links.
+6.  Close the issue (you don't need to save it, just need the link).
