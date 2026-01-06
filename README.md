@@ -15,11 +15,11 @@
 
 | Landing Page | Job Seeker Dashboard |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/600x300?text=Landing+Page+Screenshot" alt="Home" width="100%"> | <img src="https://via.placeholder.com/600x300?text=Seeker+Dashboard" alt="Dashboard" width="100%"> |
+|<img width="1891" height="903" alt="Image" src="https://github.com/user-attachments/assets/f2255c08-04f1-4448-9f54-bfb3fc6690e7" />| <img width="1919" height="904" alt="Image" src="https://github.com/user-attachments/assets/84cc17a1-a525-44db-b53f-5d5c28aab2c7" /> |
 
 | Recruiter Panel | Admin Overview |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/600x300?text=Recruiter+Job+Post" alt="Recruiter" width="100%"> | <img src="https://via.placeholder.com/600x300?text=Admin+Stats" alt="Admin" width="100%"> |
+| <img width="1895" height="900" alt="Image" src="https://github.com/user-attachments/assets/c3bcdb96-36c2-41fe-9d51-143a99bf14fa" />| <img width="1919" height="902" alt="Image" src="https://github.com/user-attachments/assets/334b86e1-1a2c-4b55-aa39-d0aab0849612" /> |
 
 *(Note: Replace these placeholder images with your actual screenshots)*
 
@@ -147,3 +147,4 @@ To make the screenshots appear in the table:
 4.  GitHub will generate a link like `![image](https://user-images.githubusercontent.com/...)`.
 5.  **Copy that link** and paste it into the `README.md` code where I put the `via.placeholder.com` links.
 6.  Close the issue (you don't need to save it, just need the link).
+
